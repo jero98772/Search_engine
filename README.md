@@ -2,6 +2,8 @@
 
 a dummy search engine using c++,python, javascript and more
 
+![](https://raw.githubusercontent.com/jero98772/Search_engine/main/pictures/0.png)
+
 ### Fabulous Search Engine
 
 The Fabulous Search Engine is a project developed in Python using FastAPI, websockets, and pybind11 for efficient page ranking calculations with C++ integration.
