@@ -6,7 +6,7 @@ from fastapi import FastAPI, Request
 from fastapi.templating import Jinja2Templates
 
 from tools.tools import *
-from tools import pagerank 
+import pagerank 
 
 app = FastAPI()
 
@@ -58,7 +58,7 @@ async def websocket_endpoint(websocket: WebSocket):
             print(f"Received message: {query}")  # Print the received message
             result = search(query, ranks,inverted_index,pages)
 
-            await manager.send_message(f"Message text was: {result}")
+            await manager.send_message(f"{query} related results : {result}")
     except WebSocketDisconnect:
         manager.disconnect(websocket)
         await manager.send_message(f"Disconnected")

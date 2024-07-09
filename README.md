@@ -28,7 +28,8 @@ pip install -r requirements.txt
 2. Install dependencies:
 
    ```bash
-   pip install -r requirements.txt
+   pip install setuptools pybind11
+   python setup.py install
    ```
 
 ### Running the Search Engine
@@ -38,6 +39,8 @@ To start the search engine, use the following command:
 ```bash
 python3 -m uvicorn main:app --reload
 ```
+
+
 
 This will launch the FastAPI server with auto-reload enabled.
 
